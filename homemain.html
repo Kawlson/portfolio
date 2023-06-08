@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="/js/jquery-3.7.0.js"></script>
+      <script src="/js/jquery.jcarousel.min.js"></script>
+      <script src="/js/jquery.jcarousel-control.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="/js/skin.css">
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <script>
+      $(function() {
+    $('.jcarousel').jcarousel({
+        wrap: 'circular'
+    });
+          
+    $('.jcarousel-prev').jcarouselControl({
+        target: '-=1'
+    });
+
+    $('.jcarousel-next').jcarouselControl({
+        target: '+=1'
+    });
+});
+
+      </script>
+      <style>
+          .jcarousel {
+              width:500px;
+              position:relative;
+              overflow:hidden;
+          }
+          
+          .jcarousel ul {
+              width: 10000em;
+              position:relative;
+              list-style: none;
+              margin:0;
+              padding:0;
+          }
+          
+          .jcarousel li {
+              float:left;
+              width:300px;
+              margin:15px;
+          }
+          
+          
+
+      </style>
+    <meta charset="UTF-8" />
+    <title>Kyle F Turner Portfilio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <div id="parallax" class="parallax" style="height: 100vh;overflow-y: auto;overflow-x: hidden;">
+            <div class="parawrap">
+        <div class="background"><section><div class="grid"></div></section></div>
+        <div class="foreground"><img style="height:100%;" src="/images/KT_Animation_Dual_Big.png" alt="meani"/></div>
+        <img class="logo" src="/images/logo_primary.png" alt="K F T Logo"/>
+                </div> 
+    <!-- <div class="parallax2"><img class="logo" src="/images/logo_primary.png" alt="K F T Logo"/><div class="parallax"><section><div class="grid"></div></section></div></div> -->
+    <div class="wrapper">
+        <button id="fixit" type="button" class="btn btn-primary" onclick="$('#parallax').toggleClass('parallax');">FixIt</button>
+		<div>
+            <div style="margin:auto;position:relative;top:175px;width:1000px;z-index:4;"><a class="jcarousel-prev" href="#"><img src="/js/nav_button_L.png" class="but" alt="Back Scroll"/></a>
+            <a class="jcarousel-next" href="#"><img src="/js/nav_button_L.png" class="but right" alt="Forward Scroll"/></a></div>
+        <div class="jcarousel display">
+            
+            <!-- Web Designs -->
+        <ul>
+        <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/sup_prev.png" alt="Supply Room Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">ROBOTS</div>
+                </div>
+			</div>
+		</div>
+        </li>
+        <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/elkslodge_prev.png" alt="Robots Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">X FROM SPACE</div>
+                </div>
+			</div>
+		</div>
+        </li>
+        <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/kofc_prev.png" alt="Robots Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">WINTER LIGHT</div>
+                </div>
+			</div>
+		</div>
+        </li>
+        <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/supjrotc_prev.png" alt="Robots Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">STRIPE</div>
+                </div>
+			</div>
+		</div>
+        </li>
+    </ul>
+        </div>
+    </div>
+        <!-- Designs & Graphics -->
+        <div>
+            <div style="margin:auto;position:relative;top:175px;width:1000px;z-index:4;"><a class="jcarousel-prev" href="#"><img src="/js/nav_button_L.png" class="but" alt="Back Scroll"/></a>
+            <a class="jcarousel-next" href="#"><img src="/js/nav_button_L.png" class="but right" alt="Forward Scroll"/></a></div>
+        <div class="jcarousel display">
+        <ul>
+        <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/birb_prev.png" alt="Birb Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">BIRB</div>
+                </div>
+			</div>
+		</div>
+        </li>
+        <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/x_prev.png" alt="X Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">X FROM SPACE</div>
+                </div>
+			</div>
+		</div>
+        </li>
+        <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/bulb_prev.png" alt="Robots Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">BULB</div>
+                </div>
+			</div>
+		</div>
+        </li>
+        <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/pcgraphic_prev.png" alt="Robots Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">STRIPE</div>
+                </div>
+			</div>
+		</div>
+        </li>
+        <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/ipandaoverlay_prev.png" alt="Robots Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">LIVING DEAD</div>
+                </div>
+			</div>
+		</div>
+        </li>
+            <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/ipandastart_prev.png" alt="Robots Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">LIVING DEAD</div>
+                </div>
+			</div>
+		</div>
+        </li>
+    </ul>
+    </div>
+        </div>
+        </div>
+    <img src="/images/pixelborder.png" alt="pixelborder"/>
+            
+            
+        <!-- Videos & Motion Graphics -->
+    <div>
+            <div style="margin:auto;position:relative;top:175px;width:1000px;z-index:4;"><a class="jcarousel-prev" href="#"><img src="/js/nav_button_L.png" class="but" alt="Back Scroll"/></a>
+            <a class="jcarousel-next" href="#"><img src="/js/nav_button_L.png" class="but right" alt="Forward Scroll"/></a></div>
+        <div class="jcarousel display">
+        <ul>
+        <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/planesvid_prev.png" alt="Robots Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">ROBOTS</div>
+                </div>
+			</div>
+		</div>
+        </li>
+        <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/jrotcvid_prev.png" alt="Robots Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">X FROM SPACE</div>
+                </div>
+			</div>
+		</div>
+        </li>
+        <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/jerseyvid_prev.png" alt="Robots Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">WINTER LIGHT</div>
+                </div>
+			</div>
+		</div>
+        </li>
+        <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/nivesvid_prev.png" alt="Robots Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">STRIPE</div>
+                </div>
+			</div>
+		</div>
+        </li>
+    </ul>
+    </div></div>
+    
+    <!-- Logo Designs -->
+    
+    <div>
+            <div style="margin:auto;position:relative;top:175px;width:1000px;z-index:4;"><a class="jcarousel-prev" href="#"><img src="/js/nav_button_L.png" class="but" alt="Back Scroll"/></a>
+            <a class="jcarousel-next" href="#"><img src="/js/nav_button_L.png" class="but right" alt="Forward Scroll"/></a></div>
+        <div class="jcarousel display">
+        <ul>
+        <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/physicianscare_prev.png" alt="Robots Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">ROBOTS</div>
+                </div>
+			</div>
+		</div>
+        </li>
+        <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/brad_logo.png" alt="Robots Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">X FROM SPACE</div>
+                </div>
+			</div>
+		</div>
+        </li>
+        <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/ipanda_prev.png" alt="Robots Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">WINTER LIGHT</div>
+                </div>
+			</div>
+		</div>
+        </li>
+        <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/rezplz_prev.png" alt="Robots Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">STRIPE</div>
+                </div>
+			</div>
+		</div>
+        </li>
+        <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/miners_prev.png" alt="Robots Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">LIVING DEAD</div>
+                </div>
+			</div>
+		</div>
+        </li>
+            <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/argent_prev.png" alt="Robots Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">LIVING DEAD</div>
+                </div>
+			</div>
+		</div>
+        </li>
+    </ul>
+    </div></div>
+    
+    <!-- Illustrations -->
+    
+    <div>
+            <div style="margin:auto;position:relative;top:175px;width:1000px;z-index:4;"><a class="jcarousel-prev" href="#"><img src="/js/nav_button_L.png" class="but" alt="Back Scroll"/></a>
+            <a class="jcarousel-next" href="#"><img src="/js/nav_button_L.png" class="but right" alt="Forward Scroll"/></a></div>
+        <div class="jcarousel display">
+        <ul>
+        <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/cam_prev.png" alt="Robots Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">ROBOTS</div>
+                </div>
+			</div>
+		</div>
+        </li>
+        <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/stripe_prev.png" alt="Robots Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">X FROM SPACE</div>
+                </div>
+			</div>
+		</div>
+        </li>
+        <li>
+                <div style="color:blue;top:500px;">
+			<img class="imgprev" data-bs-toggle="modal" src="https://ktimgprev.s3.amazonaws.com/izzy_prev.png" alt="Robots Preview"/>
+		</div>
+            <div class="modal fade" data-bs-backdrop="static">
+				<div class="modal-dialog" style="width:100%;max-width:1250px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+					</div>
+				<div class="modal-body">
+					<img src="/images/portfolio/ROBOTS.png" alt="Robots">
+				</div>
+					<div class="modal-footer">WINTER LIGHT</div>
+                </div>
+			</div>
+		</div>
+        </li>
+    </ul>
+    </div></div>
+
+<script>
+    
+
+$.each($('.imgprev'), function(ind) {
+   $(this).attr('data-bs-target', '#imgModal' + parseInt(ind + 1));
+});
+    $.each($('.modal'), function(ind) {
+   $(this).attr('id', 'imgModal' + parseInt(ind + 1));
+});
+    
+    
+    
+    
+$.each($('.imgprev').click(function() {
+    $('#parallax').toggleClass('parallax');
+}));
+    
+$.each($('#fixit').click(function() {
+    $('#parallax').toggleClass('parallax');
+}));
+    
+    
+//$.each($('.imgprev').click(function() {
+    //$('.parallax').css({'perspective' : ''});
+//}));
+
+    
+    //$.each($('.fixit').click(function() {
+    //$('.parallax').css({'perspective' : '10px'});
+//}));
+
+
+      
+
+// var modal = Document.querySelector('.modal').id;
+    
+//var img = Document.querySelector('.imprev').id;
+//var modalImg = Document.querySelector('.modalimage').id;
+//var captionText = Document.querySelector('.caption').id;
+//img.onclick = function(){
+  //modal.style.display = "block";
+  //modalImg.src = this.src;
+  //captionText.innerHTML = this.alt;
+//}
+
+//var span = document.getElementsByClassName("close")[0];
+
+//span.onclick = function() {
+  //modal.style.display = "none";
+//} 
+</script>
+        </div>
+    </body>
+    </html>
+    
