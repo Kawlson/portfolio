@@ -7,7 +7,7 @@ html {
 
 body {  
     height:100%;
-    margin:0px;
+    margin:0;
     background-color:#000f27;
 }
 
@@ -19,7 +19,7 @@ h1 {
 .logo {
     width:60vw;
     bottom:9vh;
-    right:0px;
+    right:0;
     float:right;
     background-color: transparent;
     position:absolute;
@@ -41,23 +41,23 @@ h1 {
 
 .meani {
     height:115%;
-    margin:-55px 0px 0px -80px;
+    margin:-55px 0 0 -80px;
     position:absolute;
 }
 
 .display {
     border-radius: 10px;
     background:linear-gradient(15deg, rgba(237, 237, 237),rgba(149, 149, 149)80%, rgba(237, 237, 237));
-    margin:0px auto 30px auto;
+    margin:0 auto 30px auto;
     width:950px;
-    box-shadow: 0px 0px 10px 10px #00ffff;
+    box-shadow: 0 0 10px 10px #00ffff;
 }
 
 .wrapper {margin-top:-15px;
     position:relative;
     background:#000f27;
     padding-bottom:15px;
-    box-shadow: 0px 20px 90px 90px #000f27;
+    box-shadow: 0 -40px 50px 35px #000f27;
 }
 
 canvas {
@@ -102,6 +102,18 @@ canvas {
     color:#fff;
 }
 
+.form-row {
+    display:flex;
+}
+.pix1 {
+    background:#000f27;
+    height:8vw;
+}
+
+.pix2 {
+    background:rgba(0,15,39,0);
+    height:8vw;
+}
 /* parallax "viewport" */
 
 
@@ -192,21 +204,21 @@ canvas {
 
 @keyframes car {
     5%{margin-top:5px;}
-    7%{margin-top:0px;}
+    7%{margin-top:0;}
     8%{margin-top:5px;}
-    10%{margin-top:0px;}
+    10%{margin-top:0;}
     25%{margin-top:5px;}
-    27%{margin-top:0px;}
+    27%{margin-top:0;}
     28%{margin-top:5px;}
-    30%{margin-top:0px;}
+    30%{margin-top:0;}
     55%{margin-top:5px;}
-    57%{margin-top:0px;}
+    57%{margin-top:0;}
     58%{margin-top:5px;}
-    60%{margin-top:0px;}
+    60%{margin-top:0;}
     75%{margin-top:5px;}
-    77%{margin-top:0px;}
+    77%{margin-top:0;}
     78%{margin-top:5px;}
-    80%{margin-top:0px;}
+    80%{margin-top:0;}
 }
 
 .car{
@@ -304,10 +316,20 @@ section {
     float:right;
 }
 
+/* Contact Form */
+
 /* Media QUeries */
 
-@media (min-width:1025px) and (max-width: 1200px ) {}
+@media (min-width:1350px) {
+    .display {
+        width: 1280px;
 
+    }
+
+    .butwrap {
+        width: 1345px;
+    }
+}
 @media (min-width:481px) and (max-width: 768px ) {
     
     .jcarousel li {

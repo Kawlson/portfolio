@@ -298,13 +298,70 @@
     </div>
         </div>
         </div>
-    <img src="/images/pixelborder.png" style="position:relative;" alt="pixelborder"/>
+			<div class="container-fluid">
+			<div class="row">
+				<div class="col-1 pix1"></div>
+				<div class="col-1 pix2"></div>
+				<div class="col-5 pix1"></div>
+				<div class="col-1 pix2"></div>
+				<div class="col-4 pix1"></div>
+			</div>
+				<div class="row">
+					<div class="col-2 pix1"></div>
+					<div class="col-1 pix2"></div>
+					<div class="col-1 pix1"></div>
+					<div class="col-1 pix2"></div>
+					<div class="col-3 pix1"></div>
+					<div class="col-1 pix2"></div>
+					<div class="col-2 pix1"></div>
+					<div class="col-1 pix2"></div>
+				</div>
+				<div class="row">
+					<div class="col-1 pix1"></div>
+					<div class="col-3 pix2"></div>
+					<div class="col-1 pix1"></div>
+					<div class="col-1 pix2"></div>
+					<div class="col-1 pix1"></div>
+					<div class="col-1 pix2"></div>
+					<div class="col-2 pix1"></div>
+					<div class="col-2 pix2"></div>
+				</div>
+				</div>
             <div class="parawrap" style="height:600px;">
         <div class="background"><section><div class="grid"></div></section></div>
         <div class="midground" style="transform: translateZ(-9px) scale(4);margin-top:0;"><p style="color:#fff;">"Do good work for good people." -Aaron Draplin</p></div>
         <div class="foreground"></div>
                 </div>
-    <img src="/images/pixelborder.png" style="position:relative;transform:rotate(180deg);" alt="pixelborder"/>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-1 pix1"></div>
+					<div class="col-1 pix2"></div>
+					<div class="col-2 pix1"></div>
+					<div class="col-1 pix2"></div>
+					<div class="col-1 pix1"></div>
+					<div class="col-1 pix2"></div>
+					<div class="col-1 pix1"></div>
+					<div class="col-3 pix2"></div>
+					<div class="col-1 pix1"></div>
+				</div>
+				<div class="row">
+					<div class="col-1 pix2"></div>
+					<div class="col-2 pix1"></div>
+					<div class="col-1 pix2"></div>
+					<div class="col-3 pix1"></div>
+					<div class="col-1 pix2"></div>
+					<div class="col-1 pix1"></div>
+					<div class="col-1 pix2"></div>
+					<div class="col-2 pix1"></div>
+				</div>
+				<div class="row">
+					<div class="col-4 pix1"></div>
+					<div class="col-1 pix2"></div>
+					<div class="col-5 pix1"></div>
+					<div class="col-1 pix2"></div>
+					<div class="col-1 pix1"></div>
+				</div>
+			</div>
         <!-- Videos & Motion Graphics -->
             <div class="wrapper">
 				<h1 class="text-center">Motion Graphics and Videos</h1>
@@ -652,7 +709,20 @@
 		</div>
         </li>
     </ul>
-        </div></div></div>
+        </div></div>
+		<form id="contactForm" method="POST" action="contact-form.php" style="margin:80px;">
+			<div class="form-row">
+				<div class="form-group col-sm-6">
+					<input aria-label="name" type="text" class="form-control" name="name" placeholder="Your Name" required>
+				</div>
+				<div class="form-group col-sm-6">
+					<input aria-label="email" type="email" class="form-control" name="email" placeholder="Your Email" required>
+				</div>
+			</div>
+			<textarea aria-label="message" name="message" class="form-control" placeholder="Your Message" required></textarea>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
 
 <script>
 
@@ -670,8 +740,17 @@ $imgsplit.click(function() {
     $('#parallax').toggleClass('parallax');
 });
 
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+	// Your validation code here
+	if (!isValid) {
+		event.preventDefault();
+	}
+});
+
 </script>
         </div>
+
+
     </body>
     </html>
     
