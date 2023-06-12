@@ -11,9 +11,14 @@ body {
     background-color:#000f27;
 }
 
+h1 {
+    justify-content: center;
+    color:azure;
+}
+
 .logo {
-    width:900px;
-    top:350px;
+    width:60vw;
+    bottom:9vh;
     right:0px;
     float:right;
     background-color: transparent;
@@ -35,8 +40,8 @@ body {
 }
 
 .meani {
-    width:750px;
-    margin-left:-80px;
+    height:115%;
+    margin:-55px 0px 0px -80px;
     position:absolute;
 }
 
@@ -45,13 +50,14 @@ body {
     background:linear-gradient(15deg, rgba(237, 237, 237),rgba(149, 149, 149)80%, rgba(237, 237, 237));
     margin:0px auto 30px auto;
     width:950px;
+    box-shadow: 0px 0px 10px 10px #00ffff;
 }
 
 .wrapper {margin-top:-15px;
     position:relative;
     background:#000f27;
     padding-bottom:15px;
-    box-shadow: 0px 20px 35px 40px #000f27;
+    box-shadow: 0px 20px 90px 90px #000f27;
 }
 
 canvas {
@@ -83,7 +89,18 @@ canvas {
     margin:auto;
 }
 
+.modal-body img {
+    width:100%;
+}
 
+.modal-backdrop.show {
+    opacity: 1;
+    background-color:#000f27;
+}
+
+.modal-footer {
+    color:#fff;
+}
 
 /* parallax "viewport" */
 
@@ -100,13 +117,18 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 85%;
   transform-style: preserve-3d;
   z-index: -1;
 }
 
 .background {
   transform: translateZ(-10px) scale(2);
+}
+
+.midground {
+  transform: translateZ(-8px) scale(1.9);
+    margin-top:-1200px;
 }
 
 .foreground {
@@ -121,6 +143,77 @@ canvas {
   object-fit: cover;
   z-index: -1;
 }
+
+
+/* Sun */
+
+#sun {
+   display: grid;
+   grid-template: 1fr / 1fr;
+   inline-size: min(80vmin, 400px);
+   aspect-ratio: 1;
+   border-radius: 50%;
+   font-size: 0;
+   
+   --bg: #f9124f; 
+   filter: drop-shadow(0 0 min(20px, 5vmin) var(--bg));
+   background: radial-gradient(
+      circle at center, 
+      var(--bg) 0, var(--bg) 53%, transparent 60%
+   );
+}
+
+#sun::after {
+   content: "";
+   grid-area: 1 / 1;
+   background: linear-gradient(#e59a49, #ec008c);
+   border-radius: inherit;
+   
+   --mask: linear-gradient(to bottom,
+     #000 1.5% , #0000 2%   , #0000 5%   , #000 5.5% 
+    ,#000 7.5% , #0000 8%   , #0000 10.6%, #000 11.1% 
+    ,#000 13.6%, #0000 14.1%, #0000 16.3%, #000 16.8%
+    ,#000 19.8%, #0000 20.3%, #0000 22.1%, #000 22.6% 
+    ,#000 26.1%, #0000 26.6%, #0000 28%  , #000 28.5% 
+    ,#000 32.5%, #0000 33%  , #0000 34%  , #000 34.5% 
+    ,#000 39%  , #0000 39.5%, #0000 40.1%, #000 40.6% 
+    ,#000 46.6%, #0000 47.1%, #0000 47.5%, #000 48% 
+    ,#000 53.5%, #0000 54%  , #0000 54.2%, #000 0
+   ) no-repeat;
+    
+    
+
+   
+   -webkit-mask: var(--mask);
+   mask: var(--mask);
+}
+
+/* Car */
+
+@keyframes car {
+    5%{margin-top:5px;}
+    7%{margin-top:0px;}
+    8%{margin-top:5px;}
+    10%{margin-top:0px;}
+    25%{margin-top:5px;}
+    27%{margin-top:0px;}
+    28%{margin-top:5px;}
+    30%{margin-top:0px;}
+    55%{margin-top:5px;}
+    57%{margin-top:0px;}
+    58%{margin-top:5px;}
+    60%{margin-top:0px;}
+    75%{margin-top:5px;}
+    77%{margin-top:0px;}
+    78%{margin-top:5px;}
+    80%{margin-top:0px;}
+}
+
+.car{
+    animation: car 3s infinite;
+    
+}
+
 
 /* Grid Function */
 
@@ -150,6 +243,25 @@ section {
   }
 }
 
+.grid2 {
+  background-size: 195px 70px;
+  background-image:
+    linear-gradient(to right, rgba(0, 255, 255, .5) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 255, 255, .5) 1px, transparent 1px);
+  height: inherit;
+  width: 200%;
+  transform: rotateX(67deg);
+  transform-origin: left center;
+  animation: 5s linear infinite crawlingWall2;
+  background-position-x: left;
+}
+
+@keyframes crawlingWall2 {
+  to {
+    background-position-x: right;
+  }
+}
+
 @media only screen and (max-width: 700px){
   .modal-content {
     width: 100%;
@@ -170,17 +282,55 @@ section {
     height:200px;
     background:linear-gradient(to bottom, rgba(13,0,76,0),rgba(13,0,76,1));
 }
+
+.butwrap {
+    margin:auto;
+    position:relative;
+    top:175px;
+    width:1016px;
+    z-index:4;
+    pointer-events:none;
+}
+
 .but {
     width:50px;
     top:900px;
     z-index:4;
+    pointer-events:all;
 }
 
 .but.right {
     rotate:180deg;
     float:right;
 }
-@media (min-width:320px) and (max-width: 480px ) {
+
+/* Media QUeries */
+
+@media (min-width:1025px) and (max-width: 1200px ) {}
+
+@media (min-width:481px) and (max-width: 768px ) {
+    
+    .jcarousel li {
+        margin:3vw;
+        width:auto;
+    }
+        .imgprev{
+        margin:5px;
+        width:40vw;
+    }
+    
+    .display {
+        width:95vw;
+        
+    }
+    
+    .butwrap {
+        top:28vw;
+        width:auto;
+    }
+}
+
+@media (min-width:410px) and (max-width: 480px ) {
     
     html, body {
         overflow-x: hidden;
@@ -188,6 +338,12 @@ section {
 
     body {
         position: relative
+    }
+    
+    .midground {
+        margin-left:115vw;
+        margin-top:-130vh;
+        transform: translateZ(-8px) scale(1.2);
     }
     
     .logo {
@@ -202,8 +358,63 @@ section {
         overflow:hidden;
     }
     
+    .imgprev{
+        margin:10px;
+        width:300px;
+    }
+    
     .display {
+        width:350px;
         
+    }
+    
+    .butwrap {
+        top:200px;
+        width:410px;
+    }
+}
+    
+@media (min-width:320px) and (max-width: 409px ) {
+    
+    html, body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+    
+    .midground {
+        margin-left:115vw;
+        margin-top:-130vh;
+        transform: translateZ(-8px) scale(1.2);
+    }
+    
+    .logo {
+        width:80%;
+        top:48vh;
+        right:inherit;
+        margin:auto;
+        padding:20px;
+    }
+    .meani {
+        width:515px;
+        overflow:hidden;
+    }
+    
+    .imgprev{
+        margin:-2px;
+
+    }
+    
+    .display {
+        width:275px;
+        
+    }
+    
+    .butwrap {
+        top:170px;
+        width:310px;
     }
 
 }
