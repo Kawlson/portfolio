@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="86785916-ab5d-400f-97e5-41396f9836fc" name="www.kfturnerdesign.com" url="http://server324.com">
+      <webServer id="86785916-ab5d-400f-97e5-41396f9836fc" name="www.kfturnerdesign.com" url="www.kfturnerdesign.com">
         <fileTransfer host="server324.com" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />

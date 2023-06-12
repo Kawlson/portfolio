@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="www.kfturnerdesign.com" remoteFilesAllowedToDisappearOnAutoupload="false" />
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="www.kfturnerdesign.com" uploadOnCheckin="86785916-ab5d-400f-97e5-41396f9836fc" remoteFilesAllowedToDisappearOnAutoupload="false" autoUploadExternalChanges="true">
+    <serverData>
+      <paths name="www.kfturnerdesign.com">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/www/www" local="$PROJECT_DIR$" web="/www/www" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="www.kfturnerdesign.com" />
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
+  </component>
 </project>

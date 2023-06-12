@@ -301,12 +301,13 @@
     <img src="/images/pixelborder.png" style="position:relative;" alt="pixelborder"/>
             <div class="parawrap" style="height:600px;">
         <div class="background"><section><div class="grid"></div></section></div>
-        <div class="midground" style="transform: translateZ(-9px) scale(4);margin-top:0px;"><p style="color:#fff;">"Do good work for good people." -Aaron Draplin</p></div>
+        <div class="midground" style="transform: translateZ(-9px) scale(4);margin-top:0;"><p style="color:#fff;">"Do good work for good people." -Aaron Draplin</p></div>
         <div class="foreground"></div>
                 </div>
     <img src="/images/pixelborder.png" style="position:relative;transform:rotate(180deg);" alt="pixelborder"/>
         <!-- Videos & Motion Graphics -->
             <div class="wrapper">
+				<h1 class="text-center">Motion Graphics and Videos</h1>
     <div>
             <div class="butwrap"><a class="jcarousel-prev" href="#"><img src="/js/nav_button_L.png" class="but" alt="Back Scroll"/></a>
             <a class="jcarousel-next" href="#"><img src="/js/nav_button_L.png" class="but right" alt="Forward Scroll"/></a></div>
@@ -426,7 +427,8 @@
     </div></div>
     
     <!-- Logo Designs -->
-    
+
+				<h1 class="text-center">Logo Designs</h1>
     <div>
             <div class="butwrap"><a class="jcarousel-prev" href="#"><img src="/js/nav_button_L.png" class="but" alt="Back Scroll"/></a>
             <a class="jcarousel-next" href="#"><img src="/js/nav_button_L.png" class="but right" alt="Forward Scroll"/></a></div>
@@ -557,12 +559,13 @@
                 </div>
             <div class="parawrap" style="height:600px;">
         <div class="background"><section><div class="grid2"></div></section></div>
-        <div class="midground" style="transform: translateZ(-9px) scale(4);margin-top:0px;"><img class="car" src="/images/car_pixel.png" alt="car"/></div>
+        <div class="midground" style="transform: translateZ(-9px) scale(4);margin-top:0;"><img class="car" src="/images/car_pixel.png" alt="car"/></div>
         <div class="foreground"></div>
                 </div>
     
     <!-- Illustrations -->
     <div class="wrapper">
+		<h1 class="text-center">Illustrations</h1>
     <div>
             <div class="butwrap"><a class="jcarousel-prev" href="#"><img src="/js/nav_button_L.png" class="but" alt="Back Scroll"/></a>
             <a class="jcarousel-next" href="#"><img src="/js/nav_button_L.png" class="but right" alt="Forward Scroll"/></a></div>
@@ -652,18 +655,20 @@
         </div></div></div>
 
 <script>
-    
 
-$.each($('.imgprev'), function(ind) {
+
+let $imgsplit = $('.imgprev');
+
+$imgsplit.each(function(ind) {
    $(this).attr('data-bs-target', '#imgModal' + parseInt(ind + 1));
 });
     $.each($('.modal'), function(ind) {
    $(this).attr('id', 'imgModal' + parseInt(ind + 1));
 });
-       
-$.each($('.imgprev').click(function() {
+
+$imgsplit.click(function() {
     $('#parallax').toggleClass('parallax');
-}));
+});
 
 </script>
         </div>
