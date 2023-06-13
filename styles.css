@@ -32,13 +32,6 @@ h1 {
 }
 
 
-.mountain {
-  width: 300px;
-  height: 300px;
-  background: linear-gradient(rgb(164, 164, 164), rgb(164, 164, 164,0));
-  transform: skew(287deg, 25deg);
-}
-
 .meani {
     height:115%;
     margin:-55px 0 0 -80px;
@@ -138,13 +131,19 @@ canvas {
   transform: translateZ(-10px) scale(2);
 }
 
+.midmidground {width:200vw;
+    height:100vh;
+    transform: translateZ(-9px) scale(1);
+    margin-top: -500px;
+}
+
 .midground {
-  transform: translateZ(-8px) scale(1.9);
+  transform: translateZ(-7px) scale(1.8);
     margin-top:-1200px;
 }
 
 .foreground {
-  transform: translateZ(-5px) scale(1.5);
+  transform: translateZ(-3px) scale(1.5);
 }
 
 .background,
@@ -155,7 +154,6 @@ canvas {
   object-fit: cover;
   z-index: -1;
 }
-
 
 /* Sun */
 
@@ -223,15 +221,59 @@ canvas {
 
 .car{
     animation: car 3s infinite;
+    position:relative;
+    right:25vw;
+    top:45px;
     
+}
+
+.mountains {
+    background: url("https://du64gmmv7gy0n.cloudfront.net/mountains.webp") repeat-x;
+    background-size: 100vw 100vh;
+    height:100vw;
+    width: 200vw;
+    animation: 5s linear infinite shift;
+    background-position-x: left;
+}
+
+.trees {
+    background: url("https://du64gmmv7gy0n.cloudfront.net/trees.webp") no-repeat;
+    filter: blur(2px);
+    background-size: 70vw 70vh;
+    height:100vw;
+    width: 200vw;
+    animation: 3s linear infinite shiftT;
+    background-position-x: -2000px;
+}
+
+@keyframes shift {
+    to {
+        background-position: 100vw 0;
+    }
+}
+
+@keyframes shiftT {
+    0% {background-position: -400vw 0;}
+
+    60% {background-position: 100vw 0;}
+
+    100% {background-position: 100vw 0;}
 }
 
 
 /* Grid Function */
 
 section {
+    height: 80vh;
+    width: 100vw;
+    perspective: 530px;
+    overflow: hidden;
+    background-image: linear-gradient(to top,rgba(0,15,40,1) 0%, rgba(20,68,145,1) 36%, rgba(99,11,71,1) 77%, rgba(166,17,136,1) 88%, rgba(16,75,96,1) 97%, rgba(0,15,40,1) 100%);
+}
+
+.section2 {
   height: 80vh;
-  width: 100vw;
+  width: 160vw;
   perspective: 530px;
   overflow: hidden;
   background-image: linear-gradient(to top,rgba(0,15,40,1) 0%, rgba(20,68,145,1) 36%, rgba(99,11,71,1) 77%, rgba(166,17,136,1) 88%, rgba(16,75,96,1) 97%, rgba(0,15,40,1) 100%);
@@ -262,7 +304,7 @@ section {
     linear-gradient(to bottom, rgba(0, 255, 255, .5) 1px, transparent 1px);
   height: inherit;
   width: 200%;
-  transform: rotateX(67deg);
+  transform: rotateX(81deg);
   transform-origin: left center;
   animation: 5s linear infinite crawlingWall2;
   background-position-x: left;

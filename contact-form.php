@@ -18,6 +18,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (mail($to, $subject, $body, $headers)) {
             echo "Message sent successfully!";
+            echo '<meta http-equiv="refresh" content="5;url=https://kfturnerdesign.com/" />';
+            exit;
         } else {
             echo "Failed to send message.";
         }
