@@ -2,124 +2,185 @@
 <html lang="en">
   <head>
     <script src="/js/jquery-3.7.0.js"></script>
-      <script src="/js/jquery.jcarousel.min.js"></script>
-      <script src="/js/jquery.jcarousel-control.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="/js/skin.css">
-      <script>
-      $(function() {
-    $('.jcarousel').jcarousel({
-        // Configuration goes here
-    });
-          
-    $('.jcarousel-prev').jcarouselControl({
-        target: '-=1'
-    });
+    <script src="/js/jquery.jcarousel.min.js"></script>
+    <script src="/js/jquery.jcarousel-control.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/js/skin.css" />
+    <script>
+      $(function () {
+        $(".jcarousel").jcarousel({
+          // Configuration goes here
+        });
 
-    $('.jcarousel-next').jcarouselControl({
-        target: '+=1'
-    });
-});
-          
-      </script>
-      <style>
-          .jcarousel {
-              width:500px;
-              position:relative;
-              overflow:hidden;
-          }
-          
-          .jcarousel ul {
-              width: 10000em;
-              position:relative;
-              list-style: none;
-              margin:0;
-              padding:0;
-          }
-          
-          .jcarousel li {
-              float:left;
-              width:300px;
-              margin:15px;
-          }
-      </style>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+        $(".jcarousel-prev").jcarouselControl({
+          target: "-=1",
+        });
+
+        $(".jcarousel-next").jcarouselControl({
+          target: "+=1",
+        });
+      });
+    </script>
+    <style>
+      .jcarousel {
+        width: 500px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .jcarousel ul {
+        width: 10000em;
+        position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .jcarousel li {
+        float: left;
+        width: 300px;
+        margin: 15px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
     <meta charset="UTF-8" />
     <title>Kyle F Turner Portfilio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="/styles.css">
-    </head>
-    <body>
-        <div>
-            <img class="meani" src="/images/KT_Animation_Dual_Big.png" alt="K F T Ani"/>
-            <div class="spacer"></div>
-            <img class="logo" src="/images/Asset-2-8-1.png" alt="K F T Logo"/>
-        </div>
-        <div>
-            <div style="margin:auto;position:relative;top:900px;width:900px;z-index:4;"><a class="jcarousel-prev" href="#"><img src="/js/nav_button_L.png" class="but" alt="Back Scroll"/></a>
-            <a class="jcarousel-next" href="#"><img src="/js/nav_button_L.png" class="but right" alt="Forward Scroll"/></a></div>
-        <div class="jcarousel display">
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div>
+      <img
+        class="meani"
+        src="/images/KT_Animation_Dual_Big.png"
+        alt="K F T Ani"
+      />
+      <div class="spacer"></div>
+      <img class="logo" src="/images/Asset-2-8-1.png" alt="K F T Logo" />
+    </div>
+    <div>
+      <div
+        style="
+          margin: auto;
+          position: relative;
+          top: 900px;
+          width: 900px;
+          z-index: 4;
+        "
+      >
+        <a class="jcarousel-prev" href="#"
+          ><img src="/js/nav_button_L.png" class="but" alt="Back Scroll"
+        /></a>
+        <a class="jcarousel-next" href="#"
+          ><img
+            src="/js/nav_button_L.png"
+            class="but right"
+            alt="Forward Scroll"
+        /></a>
+      </div>
+      <div class="jcarousel display">
         <ul>
-        <li class="modwrap">
-                <img class="imgprev" src="images/portfolio/ROBOTS-1.jpg" alt="Robots Preview"/>
-                <div class="modal"><span class="close">&times;</span><img class="modalimage" alt="Robots"><div class="caption">yarp</div>
-                </div>
-        </li>
-        <li  class="modwrap">
+          <li class="modwrap">
+            <img
+              class="imgprev"
+              src="images/portfolio/ROBOTS-1.jpg"
+              alt="Robots Preview"
+            />
+            <div class="modal">
+              <span class="close">&times;</span
+              ><img class="modalimage" alt="Robots" />
+              <div class="caption">yarp</div>
+            </div>
+          </li>
+          <li class="modwrap">
+            <img
+              class="imgprev"
+              src="images/portfolio/XfromOuterSpace.jpg"
+              alt="Robots Preview"
+            />
+            <div class="modal">
+              <span class="close">&times;</span
+              ><img class="modalimage" alt="X From Outer Space" />
+              <div class="caption"></div>
+            </div>
+          </li>
+          <li class="modwrap">
+            <img
+              class="imgprev"
+              src="images/portfolio/WinterLight.jpg"
+              alt="Robots Preview"
+            />
+            <div class="modal">
+              <span class="close">&times;</span
+              ><img class="modalimage" alt="Winter Light" />
+              <div class="caption"></div>
+            </div>
+          </li>
+          <li class="modwrap">
+            <img
+              class="imgprev"
+              src="images/portfolio/StripeReclined.jpg"
+              alt="Robots Preview"
+            />
+            <div class="modal">
+              <span class="close">&times;</span
+              ><img class="modalimage" alt="Stripe Reclined" />
+              <div class="caption"></div>
+            </div>
+          </li>
+          <li class="modwrap">
+            <img
+              class="imgprev"
+              src="images/portfolio/LivingDead.jpg"
+              alt="Robots Preview"
+            />
+            <div class="modal">
+              <span class="close">&times;</span
+              ><img class="modalimage" alt="Night of the Living Dead" />
+              <div class="caption"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-                <img class="imgprev" src="images/portfolio/XfromOuterSpace.jpg" alt="Robots Preview"/>
-                <div class="modal"><span class="close">&times;</span><img class="modalimage" alt="X From Outer Space"><div class="caption"></div></div>
-        </li>
-        <li  class="modwrap">
-                <img class="imgprev" src="images/portfolio/WinterLight.jpg" alt="Robots Preview"/>
-                <div class="modal"><span class="close">&times;</span><img class="modalimage" alt="Winter Light"><div class="caption"></div></div>
+    <script>
+      $.each($(".imgprev"), function (ind) {
+        $(this).attr("id", "imgPrev" + parseInt(ind + 1));
+      });
+      $.each($(".modal"), function (ind) {
+        $(this).attr("id", "imgModal" + parseInt(ind + 1));
+      });
+      $.each($(".modalimage"), function (ind) {
+        $(this).attr("id", "img0" + parseInt(ind + 1));
+      });
+      $.each($(".caption"), function (ind) {
+        $(this).attr("id", "caption" + parseInt(ind + 1));
+      });
 
-        </li>
-        <li  class="modwrap">
-                <img class="imgprev" src="images/portfolio/StripeReclined.jpg" alt="Robots Preview"/>
-                <div class="modal"><span class="close">&times;</span><img class="modalimage" alt="Stripe Reclined"><div class="caption"></div></div>
-        </li>
-        <li  class="modwrap">
-                <img class="imgprev" src="images/portfolio/LivingDead.jpg" alt="Robots Preview"/>
-                <div class="modal"><span class="close">&times;</span><img class="modalimage" alt="Night of the Living Dead"><div class="caption"></div></div>
-        </li>
-    </ul>
-    </div></div>
+      var modal = Document.querySelector(".modal").id;
 
-<script>
+      var img = Document.querySelector(".imprev").id;
+      var modalImg = Document.querySelector(".modalimage").id;
+      var captionText = Document.querySelector(".caption").id;
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      };
 
-$.each($('.imgprev'), function(ind) {
-   $(this).attr('id', 'imgPrev' + parseInt(ind + 1));
-});
-    $.each($('.modal'), function(ind) {
-   $(this).attr('id', 'imgModal' + parseInt(ind + 1));
-});
-    $.each($('.modalimage'), function(ind) {
-   $(this).attr('id', 'img0' + parseInt(ind + 1));
-});
-    $.each($('.caption'), function(ind) {
-   $(this).attr('id', 'caption' + parseInt(ind + 1));
-});
+      var span = document.getElementsByClassName("close")[0];
 
-   
-    
-var modal = Document.querySelector('.modal').id;
-    
-var img = Document.querySelector('.imprev').id;
-var modalImg = Document.querySelector('.modalimage').id;
-var captionText = Document.querySelector('.caption').id;
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-</script>
-        <div style="color:blue;height:300px;position:relative;top:500px;"></div>
-    </body>
-    </html>
-    
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+    </script>
+    <div
+      style="color: blue; height: 300px; position: relative; top: 500px"
+    ></div>
+  </body>
+</html>

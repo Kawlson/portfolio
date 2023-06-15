@@ -2,756 +2,1331 @@
 <html lang="en">
   <head>
     <script src="/js/jquery-3.7.0.js"></script>
-      <script src="/js/jquery.jcarousel.min.js"></script>
-      <script src="/js/jquery.jcarousel-control.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="/js/skin.css">
-	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-     <script>
-      $(function() {
-    $('.jcarousel').jcarousel({
-        wrap: 'circular'
-    });
-          
-    $('.jcarousel-prev').jcarouselControl({
-        target: '-=1'
-    });
+    <script src="/js/jquery.jcarousel.min.js"></script>
+    <script src="/js/jquery.jcarousel-control.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/js/skin.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $(".jcarousel").jcarousel({
+          wrap: "circular",
+        });
 
-    $('.jcarousel-next').jcarouselControl({
-        target: '+=1'
-    });
-});
+        $(".jcarousel-prev").jcarouselControl({
+          target: "-=1",
+        });
 
-      </script>
-      <style>
-          .jcarousel {
-              width:500px;
-              position:relative;
-              overflow:hidden;
-          }
-          
-          .jcarousel ul {
-              width: 10000em;
-              position:relative;
-              list-style: none;
-              margin:0;
-              padding:0;
-          }
-          
-          .jcarousel li {
-              float:left;
-              width:300px;
-              margin:15px;
-          }
-          
-          
+        $(".jcarousel-next").jcarouselControl({
+          target: "+=1",
+        });
+      });
+    </script>
+    <style>
+      .jcarousel {
+        width: 500px;
+        position: relative;
+        overflow: hidden;
+      }
 
-      </style>
+      .jcarousel ul {
+        width: 10000em;
+        position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .jcarousel li {
+        float: left;
+        width: 300px;
+        margin: 15px;
+      }
+    </style>
     <meta charset="UTF-8" />
     <title>Kyle F Turner Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="/styles.css">
-    </head>
-    <body>
-        <div id="parallax" class="parallax" style="height: 100vh;overflow-y: auto;overflow-x: hidden;">
-            <div class="parawrap">
-        <div class="background"><section><div class="grid"></div></section></div>
-        <div class="midground"><div id="sun"></div></div>
-        <div class="foreground"><img class="meani" src="/images/KT_Animation_Dual_Big.png" alt="meani"/></div>
-        <img class="logo" src="/images/logo_primary.png" alt="K F T Logo"/>
-                </div>
-    <div class="wrapper">
-        <h1 class="text-center">Web Designs</h1>
-		<div>
-            <div class="butwrap"><a class="jcarousel-prev" href="#"><img src="/js/nav_button_L.png" class="but" alt="Back Scroll"/></a>
-            <a class="jcarousel-next" href="#"><img src="/js/nav_button_L.png" class="but right" alt="Forward Scroll"/></a></div>
-        <div class="jcarousel display">
-            
-            <!-- Web Designs -->
-        <ul>
-        <li>
-
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/sup_prev.webp" alt="Supply Room Preview"/>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<a href="https://www.supplyroom.com"><img src="https://du64gmmv7gy0n.cloudfront.net/images/SupplyRoom.png" alt="SupplyRoom.com"></a>
-				</div>
-					<div class="modal-footer">www.supplyroom.com</div>
-                </div>
-			</div>
-		</div>
-        </li>
-        <li>
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/elkslodge_prev.webp" alt="ElksLodgeGear Preview"/>
-
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<a href="https://www.elkslodgegear.com"><img src="https://du64gmmv7gy0n.cloudfront.net/images/ElksLodgeGear.png" alt="ElksLodgeGear.com"></a>
-				</div>
-					<div class="modal-footer">www.elkslodgegear.com</div>
-                </div>
-			</div>
-		</div>
-        </li>
-        <li>
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/kofc_prev.webp" alt="KofC Preview"/>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<a href="https://www.kofcuniform.com"><img src="https://du64gmmv7gy0n.cloudfront.net/images/KOFCUniform.png" alt="KofCUniform.com"></a>
-				</div>
-					<div class="modal-footer">www.kofcuniform.com</div>
-                </div>
-			</div>
-		</div>
-        </li>
-        <li>
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/supjrotc_prev.webp" alt="SupplyRoom JROTC Preview"/>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<a href="https://www.supplyroomjrotc.com"><img src="https://du64gmmv7gy0n.cloudfront.net/images/SUJROTC.png" alt="SupplyRoom.com"></a>
-				</div>
-					<div class="modal-footer">www.supplyroomjrotc.com</div>
-                </div>
-			</div>
-		</div>
-        </li>
-    </ul>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div
+      id="parallax"
+      class="parallax"
+      style="height: 100vh; overflow-y: auto; overflow-x: hidden"
+    >
+      <div class="parawrap">
+        <div class="background">
+          <section><div class="grid"></div></section>
         </div>
-    </div>
+        <div class="midground"><div id="sun"></div></div>
+        <div class="foreground">
+          <img
+            class="meani"
+            src="/images/KT_Animation_Dual_Big.png"
+            alt="meani"
+          />
+        </div>
+        <img class="logo" src="/images/logo_primary.png" alt="K F T Logo" />
+      </div>
+      <div class="wrapper">
+        <h1 class="text-center">Web Designs</h1>
+        <div>
+          <div class="butwrap">
+            <a class="jcarousel-prev" href="#"
+              ><img src="/js/nav_button_L.png" class="but" alt="Back Scroll"
+            /></a>
+            <a class="jcarousel-next" href="#"
+              ><img
+                src="/js/nav_button_L.png"
+                class="but right"
+                alt="Forward Scroll"
+            /></a>
+          </div>
+          <div class="jcarousel display">
+            <!-- Web Designs -->
+            <ul>
+              <li>
+                <img
+                  class="imgprev"
+                  data-bs-toggle="modal"
+                  src="https://du64gmmv7gy0n.cloudfront.net/webedit/sup_prev.webp"
+                  alt="Supply Room Preview"
+                />
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <a href="https://www.supplyroom.com"
+                          ><img
+                            src="https://du64gmmv7gy0n.cloudfront.net/images/SupplyRoom.png"
+                            alt="SupplyRoom.com"
+                        /></a>
+                      </div>
+                      <div class="modal-footer">www.supplyroom.com</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img
+                  class="imgprev"
+                  data-bs-toggle="modal"
+                  src="https://du64gmmv7gy0n.cloudfront.net/webedit/elkslodge_prev.webp"
+                  alt="ElksLodgeGear Preview"
+                />
+
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <a href="https://www.elkslodgegear.com"
+                          ><img
+                            src="https://du64gmmv7gy0n.cloudfront.net/images/ElksLodgeGear.png"
+                            alt="ElksLodgeGear.com"
+                        /></a>
+                      </div>
+                      <div class="modal-footer">www.elkslodgegear.com</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img
+                  class="imgprev"
+                  data-bs-toggle="modal"
+                  src="https://du64gmmv7gy0n.cloudfront.net/webedit/kofc_prev.webp"
+                  alt="KofC Preview"
+                />
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <a href="https://www.kofcuniform.com"
+                          ><img
+                            src="https://du64gmmv7gy0n.cloudfront.net/images/KOFCUniform.png"
+                            alt="KofCUniform.com"
+                        /></a>
+                      </div>
+                      <div class="modal-footer">www.kofcuniform.com</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img
+                  class="imgprev"
+                  data-bs-toggle="modal"
+                  src="https://du64gmmv7gy0n.cloudfront.net/webedit/supjrotc_prev.webp"
+                  alt="SupplyRoom JROTC Preview"
+                />
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <a href="https://www.supplyroomjrotc.com"
+                          ><img
+                            src="https://du64gmmv7gy0n.cloudfront.net/images/SUJROTC.png"
+                            alt="SupplyRoom.com"
+                        /></a>
+                      </div>
+                      <div class="modal-footer">www.supplyroomjrotc.com</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
         <!-- Designs & Graphics -->
         <h1 class="text-center">Designs &amp; Graphics</h1>
         <div>
-            <div class="butwrap"><a class="jcarousel-prev" href="#"><img src="/js/nav_button_L.png" class="but" alt="Back Scroll"/></a>
-            <a class="jcarousel-next" href="#"><img src="/js/nav_button_L.png" class="but right" alt="Forward Scroll"/></a></div>
-        <div class="jcarousel display">
-        <ul>
-        <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/bradstyleguide_prev.webp" alt="Brad Turner Logo Style Guide Preview"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<img src="https://du64gmmv7gy0n.cloudfront.net/images/Brad_Turner_Logo_Style_Guide.png" alt="Brad Turner Logo Style Guide">
-				</div>
-					<div class="modal-footer">Brad Turner Logo Style Guide, 2023</div>
+          <div class="butwrap">
+            <a class="jcarousel-prev" href="#"
+              ><img src="/js/nav_button_L.png" class="but" alt="Back Scroll"
+            /></a>
+            <a class="jcarousel-next" href="#"
+              ><img
+                src="/js/nav_button_L.png"
+                class="but right"
+                alt="Forward Scroll"
+            /></a>
+          </div>
+          <div class="jcarousel display">
+            <ul>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/bradstyleguide_prev.webp"
+                    alt="Brad Turner Logo Style Guide Preview"
+                  />
                 </div>
-			</div>
-		</div>
-        </li>
-        <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/x_prev.webp" alt="X Preview"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<img src="https://du64gmmv7gy0n.cloudfront.net/images/XfromOuterSpace.jpg" alt="X From Outer Space">
-				</div>
-					<div class="modal-footer">X From Outer Space, 2013</div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="https://du64gmmv7gy0n.cloudfront.net/images/Brad_Turner_Logo_Style_Guide.png"
+                          alt="Brad Turner Logo Style Guide"
+                        />
+                      </div>
+                      <div class="modal-footer">
+                        Brad Turner Logo Style Guide, 2023
+                      </div>
+                    </div>
+                  </div>
                 </div>
-			</div>
-		</div>
-        </li>
-        <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/bulb_prev.webp" alt="Buld Preview"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<img src="https://du64gmmv7gy0n.cloudfront.net/images/bulbproject.png" alt="Broken Bulb">
-				</div>
-					<div class="modal-footer">Break Free, 2012</div>
+              </li>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/x_prev.webp"
+                    alt="X Preview"
+                  />
                 </div>
-			</div>
-		</div>
-        </li>
-        <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/pcgraphic_prev.webp" alt="PC Infographic Preview"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<img src="https://du64gmmv7gy0n.cloudfront.net/images/Phys_Care_Data_2023_2_Page_1.png" alt="Physicians Care Data Sheet Page 1">
-                    <img src="https://du64gmmv7gy0n.cloudfront.net/images/Phys_Care_Data_2023_2_Page_2.png" alt="Physicians Care Data Sheet Page 1">
-				</div>
-					<div class="modal-footer">Physicians Care Infographic, 2020-2023</div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="https://du64gmmv7gy0n.cloudfront.net/images/XfromOuterSpace.jpg"
+                          alt="X From Outer Space"
+                        />
+                      </div>
+                      <div class="modal-footer">X From Outer Space, 2013</div>
+                    </div>
+                  </div>
                 </div>
-			</div>
-		</div>
-        </li>
-        <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/ipandaoverlay_prev.webp" alt="iPanda Overlay Preview"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<img src="https://du64gmmv7gy0n.cloudfront.net/images/mid_card.png" alt="iPandaDB Twitch Overlay Card">
-				</div>
-					<div class="modal-footer">iPandaDB Twitch Overlay Card, 2021</div>
+              </li>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/bulb_prev.webp"
+                    alt="Buld Preview"
+                  />
                 </div>
-			</div>
-		</div>
-        </li>
-            <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/ipandastart_prev.webp" alt="iPandaDB Twitch Title Card"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<img src="https://du64gmmv7gy0n.cloudfront.net/images/title_card.png" alt="iPandaDB Twitch Title Card">
-				</div>
-					<div class="modal-footer">iPandaDB Twitch Title Card, 2021</div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="https://du64gmmv7gy0n.cloudfront.net/images/bulbproject.png"
+                          alt="Broken Bulb"
+                        />
+                      </div>
+                      <div class="modal-footer">Break Free, 2012</div>
+                    </div>
+                  </div>
                 </div>
-			</div>
-		</div>
-        </li>
-        <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/birb_prev.webp" alt="Bird Preview"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<img src="https://du64gmmv7gy0n.cloudfront.net/images/Tattoo_Birb.png" alt="Bird and Books">
-				</div>
-					<div class="modal-footer">Bird and Books, 2021</div>
+              </li>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/pcgraphic_prev.webp"
+                    alt="PC Infographic Preview"
+                  />
                 </div>
-			</div>
-		</div>
-        </li>
-    </ul>
-    </div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="https://du64gmmv7gy0n.cloudfront.net/images/Phys_Care_Data_2023_2_Page_1.png"
+                          alt="Physicians Care Data Sheet Page 1"
+                        />
+                        <img
+                          src="https://du64gmmv7gy0n.cloudfront.net/images/Phys_Care_Data_2023_2_Page_2.png"
+                          alt="Physicians Care Data Sheet Page 1"
+                        />
+                      </div>
+                      <div class="modal-footer">
+                        Physicians Care Infographic, 2020-2023
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/ipandaoverlay_prev.webp"
+                    alt="iPanda Overlay Preview"
+                  />
+                </div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="https://du64gmmv7gy0n.cloudfront.net/images/mid_card.png"
+                          alt="iPandaDB Twitch Overlay Card"
+                        />
+                      </div>
+                      <div class="modal-footer">
+                        iPandaDB Twitch Overlay Card, 2021
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/ipandastart_prev.webp"
+                    alt="iPandaDB Twitch Title Card"
+                  />
+                </div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="https://du64gmmv7gy0n.cloudfront.net/images/title_card.png"
+                          alt="iPandaDB Twitch Title Card"
+                        />
+                      </div>
+                      <div class="modal-footer">
+                        iPandaDB Twitch Title Card, 2021
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/birb_prev.webp"
+                    alt="Bird Preview"
+                  />
+                </div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="https://du64gmmv7gy0n.cloudfront.net/images/Tattoo_Birb.png"
+                          alt="Bird and Books"
+                        />
+                      </div>
+                      <div class="modal-footer">Bird and Books, 2021</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-1 pix1"></div>
+          <div class="col-1 pix2"></div>
+          <div class="col-5 pix1"></div>
+          <div class="col-1 pix2"></div>
+          <div class="col-4 pix1"></div>
         </div>
-			<div class="container-fluid">
-			<div class="row">
-				<div class="col-1 pix1"></div>
-				<div class="col-1 pix2"></div>
-				<div class="col-5 pix1"></div>
-				<div class="col-1 pix2"></div>
-				<div class="col-4 pix1"></div>
-			</div>
-				<div class="row">
-					<div class="col-2 pix1"></div>
-					<div class="col-1 pix2"></div>
-					<div class="col-1 pix1"></div>
-					<div class="col-1 pix2"></div>
-					<div class="col-3 pix1"></div>
-					<div class="col-1 pix2"></div>
-					<div class="col-2 pix1"></div>
-					<div class="col-1 pix2"></div>
-				</div>
-				<div class="row">
-					<div class="col-1 pix1"></div>
-					<div class="col-3 pix2"></div>
-					<div class="col-1 pix1"></div>
-					<div class="col-1 pix2"></div>
-					<div class="col-1 pix1"></div>
-					<div class="col-1 pix2"></div>
-					<div class="col-2 pix1"></div>
-					<div class="col-2 pix2"></div>
-				</div>
-				</div>
-            <div class="parawrap" style="height:600px;">
-        <div class="background"><section><div class="grid"></div></section></div>
-        <div class="midground" style="transform: translateZ(-9px) scale(4);margin-top:0;"><p style="color:#fff;">"Do good work for good people." -Aaron Draplin</p></div>
+        <div class="row">
+          <div class="col-2 pix1"></div>
+          <div class="col-1 pix2"></div>
+          <div class="col-1 pix1"></div>
+          <div class="col-1 pix2"></div>
+          <div class="col-3 pix1"></div>
+          <div class="col-1 pix2"></div>
+          <div class="col-2 pix1"></div>
+          <div class="col-1 pix2"></div>
+        </div>
+        <div class="row">
+          <div class="col-1 pix1"></div>
+          <div class="col-3 pix2"></div>
+          <div class="col-1 pix1"></div>
+          <div class="col-1 pix2"></div>
+          <div class="col-1 pix1"></div>
+          <div class="col-1 pix2"></div>
+          <div class="col-2 pix1"></div>
+          <div class="col-2 pix2"></div>
+        </div>
+      </div>
+      <div class="parawrap" style="height: 600px">
+        <div class="background">
+          <section><div class="grid"></div></section>
+        </div>
+        <div
+          class="midground"
+          style="transform: translateZ(-9px) scale(4); margin-top: 0"
+        >
+          <p style="color: #fff">
+            "Do good work for good people." -Aaron Draplin
+          </p>
+        </div>
         <div class="foreground"></div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-1 pix1"></div>
+          <div class="col-1 pix2"></div>
+          <div class="col-2 pix1"></div>
+          <div class="col-1 pix2"></div>
+          <div class="col-1 pix1"></div>
+          <div class="col-1 pix2"></div>
+          <div class="col-1 pix1"></div>
+          <div class="col-3 pix2"></div>
+          <div class="col-1 pix1"></div>
+        </div>
+        <div class="row">
+          <div class="col-1 pix2"></div>
+          <div class="col-2 pix1"></div>
+          <div class="col-1 pix2"></div>
+          <div class="col-3 pix1"></div>
+          <div class="col-1 pix2"></div>
+          <div class="col-1 pix1"></div>
+          <div class="col-1 pix2"></div>
+          <div class="col-2 pix1"></div>
+        </div>
+        <div class="row">
+          <div class="col-4 pix1"></div>
+          <div class="col-1 pix2"></div>
+          <div class="col-5 pix1"></div>
+          <div class="col-1 pix2"></div>
+          <div class="col-1 pix1"></div>
+        </div>
+      </div>
+      <!-- Videos & Motion Graphics -->
+      <div class="wrapper">
+        <h1 class="text-center">Motion Graphics and Videos</h1>
+        <div>
+          <div class="butwrap">
+            <a class="jcarousel-prev" href="#"
+              ><img src="/js/nav_button_L.png" class="but" alt="Back Scroll"
+            /></a>
+            <a class="jcarousel-next" href="#"
+              ><img
+                src="/js/nav_button_L.png"
+                class="but right"
+                alt="Forward Scroll"
+            /></a>
+          </div>
+          <div class="jcarousel display">
+            <ul>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/planesvid_prev.webp"
+                    alt="Model Plane Rotator Preview"
+                  />
                 </div>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-1 pix1"></div>
-					<div class="col-1 pix2"></div>
-					<div class="col-2 pix1"></div>
-					<div class="col-1 pix2"></div>
-					<div class="col-1 pix1"></div>
-					<div class="col-1 pix2"></div>
-					<div class="col-1 pix1"></div>
-					<div class="col-3 pix2"></div>
-					<div class="col-1 pix1"></div>
-				</div>
-				<div class="row">
-					<div class="col-1 pix2"></div>
-					<div class="col-2 pix1"></div>
-					<div class="col-1 pix2"></div>
-					<div class="col-3 pix1"></div>
-					<div class="col-1 pix2"></div>
-					<div class="col-1 pix1"></div>
-					<div class="col-1 pix2"></div>
-					<div class="col-2 pix1"></div>
-				</div>
-				<div class="row">
-					<div class="col-4 pix1"></div>
-					<div class="col-1 pix2"></div>
-					<div class="col-5 pix1"></div>
-					<div class="col-1 pix2"></div>
-					<div class="col-1 pix1"></div>
-				</div>
-			</div>
-        <!-- Videos & Motion Graphics -->
-            <div class="wrapper">
-				<h1 class="text-center">Motion Graphics and Videos</h1>
-    <div>
-            <div class="butwrap"><a class="jcarousel-prev" href="#"><img src="/js/nav_button_L.png" class="but" alt="Back Scroll"/></a>
-            <a class="jcarousel-next" href="#"><img src="/js/nav_button_L.png" class="but right" alt="Forward Scroll"/></a></div>
-        <div class="jcarousel display">
-        <ul>
-        <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/planesvid_prev.webp" alt="Model Plane Rotator Preview"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<video autoplay muted loop >
-                        <source src="https://du64gmmv7gy0n.cloudfront.net/images/ModelPlaneRotator2.mp4" type="video/mp4">
-                    </video>
-				</div>
-					<div class="modal-footer">Model Plane Rotator, 2021</div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <video autoplay muted loop>
+                          <source
+                            src="https://du64gmmv7gy0n.cloudfront.net/images/ModelPlaneRotator2.mp4"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                      <div class="modal-footer">Model Plane Rotator, 2021</div>
+                    </div>
+                  </div>
                 </div>
-			</div>
-		</div>
-        </li>
-        <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/jrotcvid_prev.webp" alt="LOTC Support Program Video Preview"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<video>
-                        <source src="https://du64gmmv7gy0n.cloudfront.net/images/Grant_LOTC_Video_3.mp4" type="video/mp4">
-                    </video>
-				</div>
-					<div class="modal-footer">LOTC Support Program Video, 2023</div>
+              </li>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/jrotcvid_prev.webp"
+                    alt="LOTC Support Program Video Preview"
+                  />
                 </div>
-			</div>
-		</div>
-        </li>
-        <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/jerseyvid_prev.webp" alt="Flight Deck Jersey Rotator Preview"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<video autoplay muted loop >
-                        <source src="https://du64gmmv7gy0n.cloudfront.net/images/flight_deck_propper.mp4" type="video/mp4">
-                    </video>
-				</div>
-					<div class="modal-footer">Flight Deck Jersey Rotator, 2022</div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <video>
+                          <source
+                            src="https://du64gmmv7gy0n.cloudfront.net/images/Grant_LOTC_Video_3.mp4"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                      <div class="modal-footer">
+                        LOTC Support Program Video, 2023
+                      </div>
+                    </div>
+                  </div>
                 </div>
-			</div>
-		</div>
-        </li>
-        <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/nivesvid_prev.webp" alt="Knife Rotator Preview"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<video autoplay muted loop >
-                        <source src="https://du64gmmv7gy0n.cloudfront.net/images/Knife_Rotator_3.mp4" type="video/mp4">
-                    </video>
-				</div>
-					<div class="modal-footer">Knife Rotator, 2021</div>
+              </li>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/jerseyvid_prev.webp"
+                    alt="Flight Deck Jersey Rotator Preview"
+                  />
                 </div>
-			</div>
-		</div>
-        </li>
-        <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/rose_prev.webp" alt="Rose Sprite Animation Tests Preview"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<img src="https://du64gmmv7gy0n.cloudfront.net/images/Idle_Charge_Test.gif" alt="Rose Idle">
-                    <img src="https://du64gmmv7gy0n.cloudfront.net/images/Shot_Test.gif" alt="Rose Shot">
-                    <img src="https://du64gmmv7gy0n.cloudfront.net/images/Spin_jump_Test.gif" alt="Rose Jump">
-				</div>
-					<div class="modal-footer">Talisman, Rose Sprite Animation Tests, 2022</div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <video autoplay muted loop>
+                          <source
+                            src="https://du64gmmv7gy0n.cloudfront.net/images/flight_deck_propper.mp4"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                      <div class="modal-footer">
+                        Flight Deck Jersey Rotator, 2022
+                      </div>
+                    </div>
+                  </div>
                 </div>
-			</div>
-		</div>
-        </li>
-    </ul>
-    </div></div>
-    
-    <!-- Logo Designs -->
-
-				<h1 class="text-center">Logo Designs</h1>
-    <div>
-            <div class="butwrap"><a class="jcarousel-prev" href="#"><img src="/js/nav_button_L.png" class="but" alt="Back Scroll"/></a>
-            <a class="jcarousel-next" href="#"><img src="/js/nav_button_L.png" class="but right" alt="Forward Scroll"/></a></div>
-        <div class="jcarousel display">
-        <ul>
-        <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/physicianscare_prev.webp" alt="Physicians Care Logo Preview"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<img src="https://du64gmmv7gy0n.cloudfront.net/images/PC_business_cards.png" alt="Physicians Care Business Cards">
-				</div>
-					<div class="modal-footer">Physicians Care, 2020</div>
+              </li>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/nivesvid_prev.webp"
+                    alt="Knife Rotator Preview"
+                  />
                 </div>
-			</div>
-		</div>
-        </li>
-        <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/bradlogo_prev.webp" alt="Brad Turner Logo Preview"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<img src="https://du64gmmv7gy0n.cloudfront.net/images/Donk_Color.png" alt="Brad Turner Logo">
-				</div>
-					<div class="modal-footer">Brad Turner Logo, 2023</div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <video autoplay muted loop>
+                          <source
+                            src="https://du64gmmv7gy0n.cloudfront.net/images/Knife_Rotator_3.mp4"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                      <div class="modal-footer">Knife Rotator, 2021</div>
+                    </div>
+                  </div>
                 </div>
-			</div>
-		</div>
-        </li>
-        <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/ipanda_prev.webp" alt="iPandaDB Logo Preview"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<img src="https://du64gmmv7gy0n.cloudfront.net/images/PanDude_Twitch_Profile_Resize.png" alt="iPandaDB Logo">
-				</div>
-					<div class="modal-footer">iPandaDB Logo, 2022</div>
+              </li>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/rose_prev.webp"
+                    alt="Rose Sprite Animation Tests Preview"
+                  />
                 </div>
-			</div>
-		</div>
-        </li>
-        <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/rezplz_prev.webp" alt="REZPLZ Logo Preview"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<img src="https://du64gmmv7gy0n.cloudfront.net/images/RezPlzProf.png" alt="REZPLZ Logo">
-				</div>
-					<div class="modal-footer">REZPLZ Logo, 2021</div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="https://du64gmmv7gy0n.cloudfront.net/images/Idle_Charge_Test.gif"
+                          alt="Rose Idle"
+                        />
+                        <img
+                          src="https://du64gmmv7gy0n.cloudfront.net/images/Shot_Test.gif"
+                          alt="Rose Shot"
+                        />
+                        <img
+                          src="https://du64gmmv7gy0n.cloudfront.net/images/Spin_jump_Test.gif"
+                          alt="Rose Jump"
+                        />
+                      </div>
+                      <div class="modal-footer">
+                        Talisman, Rose Sprite Animation Tests, 2022
+                      </div>
+                    </div>
+                  </div>
                 </div>
-			</div>
-		</div>
-        </li>
-        <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/miners_prev.webp" alt="Miner's Mile Logo Preview"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<img src="https://du64gmmv7gy0n.cloudfront.net/images/MinersMilePoster.png" alt="Miner's Mile Logo">
-				</div>
-					<div class="modal-footer">Miner's Mile Logo, 2017</div>
-                </div>
-			</div>
-		</div>
-        </li>
-            <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/argent_prev.webp" alt="Argent Logo Preview"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<img src="https://du64gmmv7gy0n.cloudfront.net/images/Argent_Email_Sig.png" alt="Argent Logo">
-				</div>
-					<div class="modal-footer">Argent Logo, 2021</div>
-                </div>
-			</div>
-		</div>
-        </li>
-    </ul>
-    </div></div>
-                </div>
-            <div class="parawrap" style="height:600px;">
-        <div class="background"><section class="section2"><div class="grid2"></div></section></div>
-				<div class="midmidground"><div class="mountains"></div></div>
-        <div class="midground" style="transform: translateZ(-6px) scale(4);margin-top:0;"><img class="car" src="/images/car_pixel.png" alt="car"/></div>
-        <div class="foreground"><div class="trees"></div></div>
-                </div>
-    
-    <!-- Illustrations -->
-    <div class="wrapper">
-		<h1 class="text-center">Illustrations</h1>
-    <div>
-            <div class="butwrap"><a class="jcarousel-prev" href="#"><img src="/js/nav_button_L.png" class="but" alt="Back Scroll"/></a>
-            <a class="jcarousel-next" href="#"><img src="/js/nav_button_L.png" class="but right" alt="Forward Scroll"/></a></div>
-        <div class="jcarousel display">
-        <ul>
-        <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/cam_prev.webp" alt="Camlin Portrait Preview"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<img src="https://du64gmmv7gy0n.cloudfront.net/images/Cam_Portrait.png" alt="Camlin Portrait">
-				</div>
-					<div class="modal-footer">Camlin Portrait, 2022</div>
-                </div>
-			</div>
-		</div>
-        </li>
-        <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/grubby_prev.webp" alt="Grubby Outlaws Preview"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<img src="https://du64gmmv7gy0n.cloudfront.net/images/Invite_Banner.png" alt="GrubbyOutlaws Banner">
-				</div>
-					<div class="modal-footer">GrubbyOutlaws Banner, 2022</div>
-                </div>
-			</div>
-		</div>
-        </li>
-        <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/izzy_prev.webp" alt="Isabella Thane Preview"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<img src="https://du64gmmv7gy0n.cloudfront.net/images/Izzy_Portrait_2.png" alt="Isabella Thane Portrait">
-				</div>
-					<div class="modal-footer">Isabella Thane Portrait, 2023</div>
-                </div>
-			</div>
-		</div>
-        </li>
-            <li>
-                <div style="color:blue;top:500px;">
-			<img class="imgprev" data-bs-toggle="modal" src="https://du64gmmv7gy0n.cloudfront.net/webedit/stripe_prev.webp" alt="Stripe Reclined Preview"/>
-		</div>
-            <div class="modal fade" data-bs-backdrop="static">
-				<div class="modal-dialog" style="width:100%;max-width:1250px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onclick="$('#parallax').toggleClass('parallax');">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-				<div class="modal-body">
-					<img src="https://du64gmmv7gy0n.cloudfront.net/images/StripeReclined.jpg" alt="Stripe Reclined">
-				</div>
-					<div class="modal-footer">Stripe Reclined, Winner: Best in Show for Design, JSU Juried Exhibition 2014</div>
-                </div>
-			</div>
-		</div>
-        </li>
-    </ul>
-        </div></div>
-		<form id="contactForm" method="POST" action="/contact-form.php" style="margin: 80px auto;width: 65vw;">
-			<div class="form-row">
-				<div class="form-group col-sm-6">
-					<input aria-label="name" type="text" class="form-control" name="name" placeholder="Your Name" required>
-				</div>
-				<div class="form-group col-sm-6">
-					<input aria-label="email" type="email" class="form-control" name="email" placeholder="Your Email" required>
-				</div>
-			</div>
-			<textarea aria-label="message" name="message" class="form-control" placeholder="Your Message" required style="height:10vw;"></textarea>
-			<button type="submit" class="btn btn-primary">Submit</button>
-		</form>
-	</div>
-
-<script>
-
-
-let $imgsplit = $('.imgprev');
-
-$imgsplit.each(function(ind) {
-   $(this).attr('data-bs-target', '#imgModal' + parseInt(ind + 1));
-});
-    $.each($('.modal'), function(ind) {
-   $(this).attr('id', 'imgModal' + parseInt(ind + 1));
-});
-
-$imgsplit.click(function() {
-    $('#parallax').toggleClass('parallax');
-});
-
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-	// Your validation code here
-	if (!isValid) {
-		event.preventDefault();
-	}
-});
-
-</script>
+              </li>
+            </ul>
+          </div>
         </div>
 
+        <!-- Logo Designs -->
 
-    </body>
-    </html>
-    
+        <h1 class="text-center">Logo Designs</h1>
+        <div>
+          <div class="butwrap">
+            <a class="jcarousel-prev" href="#"
+              ><img src="/js/nav_button_L.png" class="but" alt="Back Scroll"
+            /></a>
+            <a class="jcarousel-next" href="#"
+              ><img
+                src="/js/nav_button_L.png"
+                class="but right"
+                alt="Forward Scroll"
+            /></a>
+          </div>
+          <div class="jcarousel display">
+            <ul>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/physicianscare_prev.webp"
+                    alt="Physicians Care Logo Preview"
+                  />
+                </div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="https://du64gmmv7gy0n.cloudfront.net/images/PC_business_cards.png"
+                          alt="Physicians Care Business Cards"
+                        />
+                      </div>
+                      <div class="modal-footer">Physicians Care, 2020</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/bradlogo_prev.webp"
+                    alt="Brad Turner Logo Preview"
+                  />
+                </div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="https://du64gmmv7gy0n.cloudfront.net/images/Donk_Color.png"
+                          alt="Brad Turner Logo"
+                        />
+                      </div>
+                      <div class="modal-footer">Brad Turner Logo, 2023</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/ipanda_prev.webp"
+                    alt="iPandaDB Logo Preview"
+                  />
+                </div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="https://du64gmmv7gy0n.cloudfront.net/images/PanDude_Twitch_Profile_Resize.png"
+                          alt="iPandaDB Logo"
+                        />
+                      </div>
+                      <div class="modal-footer">iPandaDB Logo, 2022</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/rezplz_prev.webp"
+                    alt="REZPLZ Logo Preview"
+                  />
+                </div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="https://du64gmmv7gy0n.cloudfront.net/images/RezPlzProf.png"
+                          alt="REZPLZ Logo"
+                        />
+                      </div>
+                      <div class="modal-footer">REZPLZ Logo, 2021</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/miners_prev.webp"
+                    alt="Miner's Mile Logo Preview"
+                  />
+                </div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="https://du64gmmv7gy0n.cloudfront.net/images/MinersMilePoster.png"
+                          alt="Miner's Mile Logo"
+                        />
+                      </div>
+                      <div class="modal-footer">Miner's Mile Logo, 2017</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/argent_prev.webp"
+                    alt="Argent Logo Preview"
+                  />
+                </div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="https://du64gmmv7gy0n.cloudfront.net/images/Argent_Email_Sig.png"
+                          alt="Argent Logo"
+                        />
+                      </div>
+                      <div class="modal-footer">Argent Logo, 2021</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="parawrap" style="height: 600px">
+        <div class="background">
+          <section class="section2"><div class="grid2"></div></section>
+        </div>
+        <div class="midmidground"><div class="mountains"></div></div>
+        <div
+          class="midground"
+          style="transform: translateZ(-6px) scale(4); margin-top: 0"
+        >
+          <img class="car" src="/images/car_pixel.png" alt="car" />
+        </div>
+        <div class="foreground"><div class="trees"></div></div>
+      </div>
+
+      <!-- Illustrations -->
+      <div class="wrapper">
+        <h1 class="text-center">Illustrations</h1>
+        <div>
+          <div class="butwrap">
+            <a class="jcarousel-prev" href="#"
+              ><img src="/js/nav_button_L.png" class="but" alt="Back Scroll"
+            /></a>
+            <a class="jcarousel-next" href="#"
+              ><img
+                src="/js/nav_button_L.png"
+                class="but right"
+                alt="Forward Scroll"
+            /></a>
+          </div>
+          <div class="jcarousel display">
+            <ul>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/cam_prev.webp"
+                    alt="Camlin Portrait Preview"
+                  />
+                </div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="https://du64gmmv7gy0n.cloudfront.net/images/Cam_Portrait.png"
+                          alt="Camlin Portrait"
+                        />
+                      </div>
+                      <div class="modal-footer">Camlin Portrait, 2022</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/grubby_prev.webp"
+                    alt="Grubby Outlaws Preview"
+                  />
+                </div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="https://du64gmmv7gy0n.cloudfront.net/images/Invite_Banner.png"
+                          alt="GrubbyOutlaws Banner"
+                        />
+                      </div>
+                      <div class="modal-footer">GrubbyOutlaws Banner, 2022</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/izzy_prev.webp"
+                    alt="Isabella Thane Preview"
+                  />
+                </div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="https://du64gmmv7gy0n.cloudfront.net/images/Izzy_Portrait_2.png"
+                          alt="Isabella Thane Portrait"
+                        />
+                      </div>
+                      <div class="modal-footer">
+                        Isabella Thane Portrait, 2023
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div style="color: blue; top: 500px">
+                  <img
+                    class="imgprev"
+                    data-bs-toggle="modal"
+                    src="https://du64gmmv7gy0n.cloudfront.net/webedit/stripe_prev.webp"
+                    alt="Stripe Reclined Preview"
+                  />
+                </div>
+                <div class="modal fade" data-bs-backdrop="static">
+                  <div
+                    class="modal-dialog"
+                    style="width: 100%; max-width: 1250px"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          onclick="$('#parallax').toggleClass('parallax');"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="https://du64gmmv7gy0n.cloudfront.net/images/StripeReclined.jpg"
+                          alt="Stripe Reclined"
+                        />
+                      </div>
+                      <div class="modal-footer">
+                        Stripe Reclined, Winner: Best in Show for Design, JSU
+                        Juried Exhibition 2014
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form
+          id="contactForm"
+          method="POST"
+          action="/contact-form.php"
+          style="margin: 80px auto; width: 65vw"
+        >
+          <div class="form-row">
+            <div class="form-group col-sm-6">
+              <input
+                aria-label="name"
+                type="text"
+                class="form-control"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="form-group col-sm-6">
+              <input
+                aria-label="email"
+                type="email"
+                class="form-control"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+          </div>
+          <textarea
+            aria-label="message"
+            name="message"
+            class="form-control"
+            placeholder="Your Message"
+            required
+            style="height: 10vw"
+          ></textarea>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+      <script>
+        let $imgsplit = $(".imgprev");
+
+        $imgsplit.each(function (ind) {
+          $(this).attr("data-bs-target", "#imgModal" + parseInt(ind + 1));
+        });
+        $.each($(".modal"), function (ind) {
+          $(this).attr("id", "imgModal" + parseInt(ind + 1));
+        });
+
+        $imgsplit.click(function () {
+          $("#parallax").toggleClass("parallax");
+        });
+
+        document
+          .getElementById("contactForm")
+          .addEventListener("submit", function (event) {
+            // Your validation code here
+            if (!isValid) {
+              event.preventDefault();
+            }
+          });
+      </script>
+    </div>
+  </body>
+</html>
